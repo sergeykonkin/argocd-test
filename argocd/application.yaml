@@ -6,6 +6,10 @@ metadata:
 spec:
   project: default
 
+  info:
+  - name: foo
+    value: bar
+
   sources:
   - repoURL: https://github.com/sergeykonkin/argocd-test.git
     targetRevision: HEAD
