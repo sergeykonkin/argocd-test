@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
 
-  sources:
+  source:
     repoURL: https://github.com/sergeykonkin/argocd-test.git
     targetRevision: HEAD
     path: manifests
