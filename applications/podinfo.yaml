@@ -4,18 +4,10 @@ metadata:
   name: podinfo-argo-application
   namespace: argocd
 spec:
-  project: default
-
-  info:
-  - name: foo
-    value: bar
+  project: podinfo
 
   sources:
-  - repoURL: https://github.com/sergeykonkin/argocd-test.git
-    targetRevision: HEAD
-    path: argocd
-
-  - repoURL: https://github.com/sergeykonkin/argocd-test.git
+    repoURL: https://github.com/sergeykonkin/argocd-test.git
     targetRevision: HEAD
     path: manifests
 
