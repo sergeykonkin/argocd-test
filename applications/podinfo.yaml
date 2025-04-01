@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/sergeykonkin/argocd-test.git
     targetRevision: HEAD
-    path: manifests
+    path: podinfo
 
   destination: 
     server: https://kubernetes.default.svc
