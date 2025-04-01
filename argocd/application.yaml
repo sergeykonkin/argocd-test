@@ -9,11 +9,11 @@ spec:
   sources:
   - repoURL: https://github.com/sergeykonkin/argocd-test.git
     targetRevision: HEAD
-    path: application.yaml
+    path: argocd
 
   - repoURL: https://github.com/sergeykonkin/argocd-test.git
     targetRevision: HEAD
-    path: local
+    path: manifests
 
   destination: 
     server: https://kubernetes.default.svc
