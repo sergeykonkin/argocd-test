@@ -6,10 +6,15 @@ metadata:
 spec:
   project: default
 
-  source:
-    repoURL: https://github.com/sergeykonkin/argocd-test.git
+  sources:
+  - repoURL: https://github.com/sergeykonkin/argocd-test.git
+    targetRevision: HEAD
+    path: application.yaml
+
+  - repoURL: https://github.com/sergeykonkin/argocd-test.git
     targetRevision: HEAD
     path: local
+
   destination: 
     server: https://kubernetes.default.svc
     namespace: podinfo
