@@ -16,3 +16,8 @@ spec:
     namespace: prunetest
 
   project: default
+
+  syncPolicy:
+    automated:
+      selfHeal: true
+      prune: true
