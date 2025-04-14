@@ -2,15 +2,20 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: podinfo-deployment
+labels:
+  app.kubernetes.io/managed-by: argocd
+  app.kubernetes.io/name: podinfo
+  app.kubernetes.io/version: 6.7.1
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: podinfo
+      app.kubernetes.io/name: podinfo
   template:
     metadata:
       labels:
-        app: podinfo
+        app.kubernetes.io/name: podinfo
+        app.kubernetes.io/version: 6.7.1
     spec:
       containers:
       - name: podinfo
