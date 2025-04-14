@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: podinfo
+  name: foo-argocd-application
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: https://github.com/sergeykonkin/argocd-test.git
     targetRevision: HEAD
-    path: podinfo
+    path: foo
   destination: 
     server: https://kubernetes.default.svc
     namespace: default
